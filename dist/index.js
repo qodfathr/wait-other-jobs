@@ -40279,7 +40279,7 @@ var ZeroableDuration = external_exports.instanceof(Xn.Duration).refine(
   }
 );
 var defaultGrace = Xn.Duration.from({ seconds: 10 });
-var workflowPath = external_exports.string().endsWith(".yml").or(external_exports.string().endsWith(".yaml"));
+var workflowPath = external_exports.string();
 var matchAllJobs = external_exports.strictObject({
   workflowFile: workflowPath,
   jobMatchMode: external_exports.literal("all").default("all")
